@@ -841,4 +841,6 @@ func main() {
 	goji.Post("/admin/banned", postAdminBanned)
 	goji.Get("/*", http.FileServer(http.Dir("../public")))
 	goji.Serve()
+
+	fmt.Print("Succeed")
 }
