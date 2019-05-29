@@ -788,7 +788,7 @@ func postAdminBanned(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 
-	fmt.Print("Succeed")
+	fmt.Println("Succeed")
 
 	host := os.Getenv("ISUCONP_DB_HOST")
 	if host == "" {
