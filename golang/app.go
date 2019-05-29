@@ -787,6 +787,9 @@ func postAdminBanned(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+
+	fmt.Print("Succeed")
+
 	host := os.Getenv("ISUCONP_DB_HOST")
 	if host == "" {
 		host = "localhost"
@@ -842,5 +845,4 @@ func main() {
 	goji.Get("/*", http.FileServer(http.Dir("../public")))
 	goji.Serve()
 
-	fmt.Print("Succeed")
 }
